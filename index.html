@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank-Doc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16">Aladin <span
+            class="text-purple-600  font-bold">mooooooney</span> currency!!!</h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-blue-300 p-8 rounded">
+                    <h4 class="text-2xl">Diposit</h4>
+                    <h3 class="text-4xl">$<span id="diposit-total">00</span></h3>
+                </div>
+                <div class="bg-green-300 p-8 rounded">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h3 class="text-4xl">$<span id="withdraw-total">00</span></h3>
+                </div>
+                <div class="bg-yellow-300 p-8 rounded">
+                    <h4 class="text-2xl">balance</h4>
+                    <h3 class="text-4xl">$<span id="balance-total">1240</span></h3>
+                </div>
+            </div>
+        </section>
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-8 bg-red-100">
+                    <h3 class="text-2xl mb-4">please! Diposit</h3>
+                    <input class="block mb-4 border border-gray-200 rounded px-2 w-3/4" type="text" name="" id="diposit-input" placeholder="$ amount you want to diposit">
+                    <button id="diposit-btn" class="bg-yellow-600 px-4 py-2 text-white rounded font-medium">Diposit</button>
+                </div>
+                <div class="p-8 bg-purple-100">
+                    <h3 class="text-2xl mb-4">please! Withdraw</h3>
+                    <input class="block mb-4 border border-gray-200 rounded px-2 w-3/4" type="text" name="" id="withdraw-input" placeholder="$ amount you want to withdraw">
+                    <button id="withdraw-btn" class="bg-yellow-600 px-4 py-2 text-white rounded font-medium">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
